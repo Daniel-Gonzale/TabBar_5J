@@ -36,22 +36,22 @@ class _MyHomePageState extends State<MyHomePage> {
             isScrollable: true,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.greenAccent),
+                color: Color(0xffcbf2df)),
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.access_alarm_rounded)),
+              Tab(icon: Icon(Icons.home)),
+              Tab(icon: Icon(Icons.add_box_outlined)),
+              Tab(icon: Icon(Icons.search)),
+              Tab(icon: Icon(Icons.facebook_rounded)),
             ],
           ),
           title: Text('Tabs Demo'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.access_alarm_rounded, size: 350),
+            Icon(Icons.home, size: 350),
+            Icon(Icons.add_box_outlined, size: 350),
+            Icon(Icons.search, size: 350),
+            Icon(Icons.facebook_rounded, size: 350),
           ],
         ),
       ),
